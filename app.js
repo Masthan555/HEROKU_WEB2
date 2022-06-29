@@ -8,6 +8,6 @@ require("./routes/index.routes")(app);
 
 app.use(express.json());
 
-app.listen(8081, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log("Server Started");
 });
